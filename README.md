@@ -1,5 +1,5 @@
-# react-template
-React template,use react, react-router4, react-redux
+# react-redux-template
+React&redux template,use react, react-router4, react-redux，axios，mock etc.
 <h2>初始化</h2>
 <pre>npm install 或 cnpm install</pre>
 <h3>开发</h3>
