@@ -2,6 +2,8 @@
 React&redux template,use react, react-router4, react-redux，axios，mock etc.
 <h2>初始化</h2>
 <pre>npm install 或 cnpm install</pre>
+<h3>First run api server</h3>
+<pre>npm run server</pre>
 <h3>开发</h3>
 <pre>npm run start</pre>
 <h3>测试</h3>
