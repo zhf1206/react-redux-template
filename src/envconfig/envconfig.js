@@ -4,7 +4,7 @@
 let baseURL; 
 let imgUrl = '//localhost:8001/img/';
 if(process.env.NODE_ENV === 'development'){
-  baseURL = '//localhost:9000';
+  baseURL = '//localhost:3001';
 }else{
   baseURL = '//localhost:9090';
 }

@@ -12,7 +12,7 @@ export const loginApp = (state = defaultState, action) => {
       return [
         ...state,
         {
-          token: action.user,
+          token: action.user.id,
           user: action.user
         }
       ]

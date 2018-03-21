@@ -46,14 +46,14 @@ class Login extends Component {
     this.props.saveFormData(value, type);
   }
 
-  loginClick = () => {
+  loginClick = async () => {
     var param = {
       userName: this.state.userName,
       userPwd: this.state.userPwd
     }
-    let result = API.login(param);
+    let result = await API.login(param);
     this.props.login(result.data);
-    console.log(this.props.userName);
+    console.log(this.state.login);
   }
 
   render() {

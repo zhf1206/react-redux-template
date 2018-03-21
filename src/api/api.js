@@ -10,10 +10,10 @@ class API extends Server{
   async uploadImg(params = {}){
     try{
       let result = await this.post('/v1/upload', params); 
-      if(result && (result.data.data instanceof Object) && result.data.code === 1000){
+      if(result){
         return result;
       }else{
-        console.log(result.data.msg);
+        console.log(result.msg);
       }
     } catch(err){
       throw err;
@@ -28,10 +28,10 @@ class API extends Server{
   async login(params = {}){
     try{
       let result = await this.post('/v1/login', params); 
-      if(result && (result.data instanceof Object) && result.data.code === 1000){
-        return result.data.data||[];
+      if(result){
+        return result;
       }else{
-        console.log(result.data.msg);
+        console.log(result.msg);
       }
     } catch(err){
       throw err;

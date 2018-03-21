@@ -40,8 +40,8 @@ axios.interceptors.request.use((config) => {
 
 // 返回状态判断
 axios.interceptors.response.use((res) => {
-  let baseData = res.data.data?JSON.parse(Base64.decode(res.data.data)):"";
-  res.data.data = baseData;
+  // let baseData = res.data.data?JSON.parse(Base64.decode(res.data.data)):"";
+  // res.data.data = baseData;
   if (res.data.code === 200) {
     return res;
   }
